@@ -44,7 +44,6 @@ def get_handle_x(length):
     ratio = (length - MIN_LENGTH) / (MAX_LENGTH - MIN_LENGTH)
     return SLIDER_X + int(ratio * SLIDER_WIDTH)
 
-# щавгвпавпа авовпапапаирвпа
 
 # Рассчитываем длину пароля на основе позиции мыши
 def get_length_from_x(x):
@@ -153,7 +152,7 @@ while running:
         # Центрируем текст внутри панели
         screen.blit(pass_text, (WIDTH // 2 - pass_text.get_width() // 2, 273))
 
-    # 5. Статусный текст вниз
+    # 5. Статусный текст внизу
     status_lbl = FONT_UI.render(status_text, True, (100, 116, 139))
     screen.blit(status_lbl, (WIDTH // 2 - status_lbl.get_width() // 2, 330))
 
